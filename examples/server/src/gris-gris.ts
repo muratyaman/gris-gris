@@ -1,1 +1,1 @@
-export * from '../../../src';
+export * from '@/gris-gris/index';

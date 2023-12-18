@@ -1,8 +1,7 @@
 export function jsonStringify(v: any): string {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    console.warn('error on JSON.stringify()', err);
-    return '';
-  }
+  return JSON.stringify(v);
+}
+
+export function jsonParse<T = any>(v: string): T {
+  return JSON.parse(v) as T; // pretending to be T
 }
